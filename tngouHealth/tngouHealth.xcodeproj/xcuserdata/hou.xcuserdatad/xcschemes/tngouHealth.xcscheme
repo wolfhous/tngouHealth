@@ -14,7 +14,7 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "967F72291CC482AA00E01FE4"
+               BlueprintIdentifier = "969499971CC082E600336F26"
                BuildableName = "tngouHealth.app"
                BlueprintName = "tngouHealth"
                ReferencedContainer = "container:tngouHealth.xcodeproj">
@@ -32,7 +32,7 @@
       <MacroExpansion>
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "967F72291CC482AA00E01FE4"
+            BlueprintIdentifier = "969499971CC082E600336F26"
             BuildableName = "tngouHealth.app"
             BlueprintName = "tngouHealth"
             ReferencedContainer = "container:tngouHealth.xcodeproj">
@@ -55,7 +55,7 @@
          runnableDebuggingMode = "0">
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "967F72291CC482AA00E01FE4"
+            BlueprintIdentifier = "969499971CC082E600336F26"
             BuildableName = "tngouHealth.app"
             BlueprintName = "tngouHealth"
             ReferencedContainer = "container:tngouHealth.xcodeproj">
@@ -74,7 +74,7 @@
          runnableDebuggingMode = "0">
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "967F72291CC482AA00E01FE4"
+            BlueprintIdentifier = "969499971CC082E600336F26"
             BuildableName = "tngouHealth.app"
             BlueprintName = "tngouHealth"
             ReferencedContainer = "container:tngouHealth.xcodeproj">
