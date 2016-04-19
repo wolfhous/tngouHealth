@@ -19,12 +19,20 @@
 
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
-    [UMCommunity setWithAppKey:@"571070b367e58ef13e001b1d"];  //需要修改微社区的Appkey
+    
+    //===================UM微社区begin============//
+    //需要修改微社区的Appkey
+    [UMCommunity setWithAppKey:@"571070b367e58ef13e001b1d"];
+    //===================UM微社区end============//
+    
+    
+    //===================环信begin============//
     //AppKey:注册的appKey，详细见下面注释。
     //apnsCertName:推送证书名(不需要加后缀)，详细见下面注释。
     EMOptions *options = [EMOptions optionsWithAppkey:@"houshuai#tngou"];
 //    options.apnsCertName = @"istore_dev";
     [[EMClient sharedClient] initializeSDKWithOptions:options];
+    //===================环信end============//
     return YES;
 }
 
@@ -38,14 +46,14 @@
 // App进入后台
 - (void)applicationDidEnterBackground:(UIApplication *)application {
     [[EMClient sharedClient] applicationDidEnterBackground:application];
-    DLog(@"App进入后台")
+    DLog(@"App进入后台");
     // Use this method to release shared resources, save user data, invalidate timers, and store enough application state information to restore your application to its current state in case it is terminated later.
     // If your application supports background execution, this method is called instead of applicationWillTerminate: when the user quits.
 }
 // App将要从后台返回
 - (void)applicationWillEnterForeground:(UIApplication *)application {
     [[EMClient sharedClient] applicationWillEnterForeground:application];
-    DLog(@"App将要从后台返回")
+    DLog(@"App将要从后台返回");
     // Called as part of the transition from the background to the inactive state; here you can undo many of the changes made on entering the background.
 }
 

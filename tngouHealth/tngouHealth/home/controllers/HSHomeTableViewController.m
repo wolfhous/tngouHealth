@@ -8,7 +8,8 @@
 
 #import "HSHomeTableViewController.h"
 #import "EMClient.h"
-@interface HSHomeTableViewController ()
+#import "SDCycleScrollView.h"
+@interface HSHomeTableViewController ()<SDCycleScrollViewDelegate>
 
 @end
 
@@ -16,12 +17,14 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    EMError *error = [[EMClient sharedClient] registerWithUsername:@"hs1" password:@"111111"];
-    if (error==nil) {
-        NSLog(@"注册成功");
-    }else{
-        DLog(@"%@",error)
-    }
+    self.navigationItem.title = @"首页";
+    [self setupHeaderScrollView];
+//    EMError *error = [[EMClient sharedClient] registerWithUsername:@"hs1" password:@"111111"];
+//    if (error==nil) {
+//        NSLog(@"注册成功");
+//    }else{
+//        DLog(@"%@",error)
+//    }
     // Uncomment the following line to preserve selection between presentations.
     // self.clearsSelectionOnViewWillAppear = NO;
     
@@ -29,9 +32,33 @@
      self.navigationItem.rightBarButtonItem = self.editButtonItem;
 }
 
-- (void)didReceiveMemoryWarning {
-    [super didReceiveMemoryWarning];
-    // Dispose of any resources that can be recreated.
+#pragma mark - 配置轮播图片---创建轮播图片
+/** 配置表头ScrollView,放在tableHeaderView*/
+-(void)setupHeaderScrollView
+{
+    SDCycleScrollView *headerView = [[SDCycleScrollView alloc]initWithFrame:CGRectMake(0, 0, SCREEN_WIDTH, 120)];
+    //设置navigationbar不透明
+    self.edgesForExtendedLayout = UIRectEdgeNone;
+    NSArray *imagesURLStrings = @[
+                                  @"http://www.danzhaowang.com/UploadFiles/2015-11-17/2/2015111710265656155.jpg",
+                                  @"http://www.danzhaowang.com/images/2016danzhaohelp.jpg",
+                                  @"http://www.danzhaowang.com/ad/33.jpg"
+                                  ];
+    NSArray *titles = @[@"www.houshuai.com",
+                        @"天狗查药测试版本!!!",
+                        @"重做测试!!!!"
+                        ];
+    headerView.imageURLStringsGroup = imagesURLStrings;
+    headerView.titlesGroup = titles;
+    //配置pageControl样式
+    headerView.pageControlAliment = SDCycleScrollViewPageContolAlimentRight;
+    headerView.delegate = self;
+    self.tableView.tableHeaderView = headerView;
+}
+#pragma mark - 配置轮播图片---图片点击代理
+/** 点击图片回调 */
+- (void)cycleScrollView:(SDCycleScrollView *)cycleScrollView didSelectItemAtIndex:(NSInteger)index{
+    DLog(@"点击了第%ld张图片",index);
 }
 
 #pragma mark - Table view data source
