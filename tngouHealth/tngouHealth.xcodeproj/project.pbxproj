@@ -7,6 +7,16 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		961C45671CC68EC8006B9325 /* MOBFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 961C45651CC68EC8006B9325 /* MOBFoundation.framework */; };
+		961C45681CC68EC8006B9325 /* SMS_SDK.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 961C45661CC68EC8006B9325 /* SMS_SDK.framework */; };
+		961C456A1CC6900C006B9325 /* libicucore.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 961C45691CC6900C006B9325 /* libicucore.tbd */; };
+		961C456C1CC69014006B9325 /* MessageUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 961C456B1CC69014006B9325 /* MessageUI.framework */; };
+		961C456E1CC69021006B9325 /* JavaScriptCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 961C456D1CC69021006B9325 /* JavaScriptCore.framework */; };
+		961C45721CC69CB3006B9325 /* HSRegisterViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 961C45701CC69CB3006B9325 /* HSRegisterViewController.m */; };
+		961C45731CC69CB3006B9325 /* HSRegisterViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 961C45711CC69CB3006B9325 /* HSRegisterViewController.xib */; };
+		961C457A1CC6A0C2006B9325 /* MBProgressHUD+KR.m in Sources */ = {isa = PBXBuildFile; fileRef = 961C45761CC6A0C2006B9325 /* MBProgressHUD+KR.m */; };
+		961C457B1CC6A0C2006B9325 /* MBProgressHUD.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 961C45771CC6A0C2006B9325 /* MBProgressHUD.bundle */; };
+		961C457C1CC6A0C2006B9325 /* MBProgressHUD.m in Sources */ = {isa = PBXBuildFile; fileRef = 961C45791CC6A0C2006B9325 /* MBProgressHUD.m */; };
 		967F76341CC485B600E01FE4 /* libHyphenateFullSDK.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 967F74BE1CC485B600E01FE4 /* libHyphenateFullSDK.a */; };
 		967F76351CC485B600E01FE4 /* libHyphenateSDK.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 967F74BF1CC485B600E01FE4 /* libHyphenateSDK.a */; };
 		967F76361CC485B600E01FE4 /* libUMessage_Sdk_1.1.0.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 967F74C31CC485B600E01FE4 /* libUMessage_Sdk_1.1.0.a */; };
@@ -234,9 +244,29 @@
 		96B9656B1CC621E70001E401 /* UIScrollView+MJExtension.m in Sources */ = {isa = PBXBuildFile; fileRef = 96B9654C1CC621E70001E401 /* UIScrollView+MJExtension.m */; };
 		96B9656C1CC621E70001E401 /* UIScrollView+MJRefresh.m in Sources */ = {isa = PBXBuildFile; fileRef = 96B9654E1CC621E70001E401 /* UIScrollView+MJRefresh.m */; };
 		96B9656D1CC621E70001E401 /* UIView+MJExtension.m in Sources */ = {isa = PBXBuildFile; fileRef = 96B965501CC621E70001E401 /* UIView+MJExtension.m */; };
+		96C00F231CC7340700364158 /* NSString+HSString.m in Sources */ = {isa = PBXBuildFile; fileRef = 96C00F221CC7340700364158 /* NSString+HSString.m */; };
+		96C00F271CC7343100364158 /* HSManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 96C00F261CC7343100364158 /* HSManager.m */; };
+		96C00F2A1CC75FC900364158 /* HSNearbyViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 96C00F291CC75FC900364158 /* HSNearbyViewController.m */; };
+		96C00F2D1CC7614E00364158 /* HSHomeNavigationController.m in Sources */ = {isa = PBXBuildFile; fileRef = 96C00F2C1CC7614E00364158 /* HSHomeNavigationController.m */; };
+		96C00F311CC761A700364158 /* UINavigationController+FDFullscreenPopGesture.m in Sources */ = {isa = PBXBuildFile; fileRef = 96C00F301CC761A700364158 /* UINavigationController+FDFullscreenPopGesture.m */; };
+		96C00F351CC765AD00364158 /* HSCeshiViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 96C00F331CC765AD00364158 /* HSCeshiViewController.m */; };
+		96C00F361CC765AD00364158 /* HSCeshiViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 96C00F341CC765AD00364158 /* HSCeshiViewController.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		961C45651CC68EC8006B9325 /* MOBFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = MOBFoundation.framework; sourceTree = "<group>"; };
+		961C45661CC68EC8006B9325 /* SMS_SDK.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = SMS_SDK.framework; sourceTree = "<group>"; };
+		961C45691CC6900C006B9325 /* libicucore.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libicucore.tbd; path = usr/lib/libicucore.tbd; sourceTree = SDKROOT; };
+		961C456B1CC69014006B9325 /* MessageUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MessageUI.framework; path = System/Library/Frameworks/MessageUI.framework; sourceTree = SDKROOT; };
+		961C456D1CC69021006B9325 /* JavaScriptCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = JavaScriptCore.framework; path = System/Library/Frameworks/JavaScriptCore.framework; sourceTree = SDKROOT; };
+		961C456F1CC69CB3006B9325 /* HSRegisterViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HSRegisterViewController.h; sourceTree = "<group>"; };
+		961C45701CC69CB3006B9325 /* HSRegisterViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HSRegisterViewController.m; sourceTree = "<group>"; };
+		961C45711CC69CB3006B9325 /* HSRegisterViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = HSRegisterViewController.xib; sourceTree = "<group>"; };
+		961C45751CC6A0C2006B9325 /* MBProgressHUD+KR.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "MBProgressHUD+KR.h"; sourceTree = "<group>"; };
+		961C45761CC6A0C2006B9325 /* MBProgressHUD+KR.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "MBProgressHUD+KR.m"; sourceTree = "<group>"; };
+		961C45771CC6A0C2006B9325 /* MBProgressHUD.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = MBProgressHUD.bundle; sourceTree = "<group>"; };
+		961C45781CC6A0C2006B9325 /* MBProgressHUD.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MBProgressHUD.h; sourceTree = "<group>"; };
+		961C45791CC6A0C2006B9325 /* MBProgressHUD.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MBProgressHUD.m; sourceTree = "<group>"; };
 		967F74981CC485B600E01FE4 /* EMCallLocalView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EMCallLocalView.h; sourceTree = "<group>"; };
 		967F74991CC485B600E01FE4 /* EMCallManagerDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EMCallManagerDelegate.h; sourceTree = "<group>"; };
 		967F749A1CC485B600E01FE4 /* EMCallRemoteView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EMCallRemoteView.h; sourceTree = "<group>"; };
@@ -742,6 +772,19 @@
 		96B9654E1CC621E70001E401 /* UIScrollView+MJRefresh.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIScrollView+MJRefresh.m"; sourceTree = "<group>"; };
 		96B9654F1CC621E70001E401 /* UIView+MJExtension.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+MJExtension.h"; sourceTree = "<group>"; };
 		96B965501CC621E70001E401 /* UIView+MJExtension.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+MJExtension.m"; sourceTree = "<group>"; };
+		96C00F211CC7340700364158 /* NSString+HSString.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+HSString.h"; sourceTree = "<group>"; };
+		96C00F221CC7340700364158 /* NSString+HSString.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+HSString.m"; sourceTree = "<group>"; };
+		96C00F251CC7343100364158 /* HSManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HSManager.h; sourceTree = "<group>"; };
+		96C00F261CC7343100364158 /* HSManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HSManager.m; sourceTree = "<group>"; };
+		96C00F281CC75FC900364158 /* HSNearbyViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HSNearbyViewController.h; sourceTree = "<group>"; };
+		96C00F291CC75FC900364158 /* HSNearbyViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HSNearbyViewController.m; sourceTree = "<group>"; };
+		96C00F2B1CC7614E00364158 /* HSHomeNavigationController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HSHomeNavigationController.h; sourceTree = "<group>"; };
+		96C00F2C1CC7614E00364158 /* HSHomeNavigationController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HSHomeNavigationController.m; sourceTree = "<group>"; };
+		96C00F2F1CC761A700364158 /* UINavigationController+FDFullscreenPopGesture.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UINavigationController+FDFullscreenPopGesture.h"; sourceTree = "<group>"; };
+		96C00F301CC761A700364158 /* UINavigationController+FDFullscreenPopGesture.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UINavigationController+FDFullscreenPopGesture.m"; sourceTree = "<group>"; };
+		96C00F321CC765AD00364158 /* HSCeshiViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HSCeshiViewController.h; sourceTree = "<group>"; };
+		96C00F331CC765AD00364158 /* HSCeshiViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HSCeshiViewController.m; sourceTree = "<group>"; };
+		96C00F341CC765AD00364158 /* HSCeshiViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = HSCeshiViewController.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -749,6 +792,9 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				961C456E1CC69021006B9325 /* JavaScriptCore.framework in Frameworks */,
+				961C456C1CC69014006B9325 /* MessageUI.framework in Frameworks */,
+				961C456A1CC6900C006B9325 /* libicucore.tbd in Frameworks */,
 				967F76441CC485B600E01FE4 /* libSocialQQ.a in Frameworks */,
 				96949C3D1CC0D48400336F26 /* AssetsLibrary.framework in Frameworks */,
 				967F76361CC485B600E01FE4 /* libUMessage_Sdk_1.1.0.a in Frameworks */,
@@ -761,6 +807,7 @@
 				967F76351CC485B600E01FE4 /* libHyphenateSDK.a in Frameworks */,
 				967F76451CC485B600E01FE4 /* TencentOpenAPI.framework in Frameworks */,
 				96949C331CC0D44700336F26 /* Security.framework in Frameworks */,
+				961C45671CC68EC8006B9325 /* MOBFoundation.framework in Frameworks */,
 				96949C311CC0D42500336F26 /* libsqlite3.tbd in Frameworks */,
 				96949C2F1CC0D41C00336F26 /* libstdc++.6.0.9.tbd in Frameworks */,
 				96949C2D1CC0D41300336F26 /* libz.tbd in Frameworks */,
@@ -775,6 +822,7 @@
 				96949C211CC0D3DD00336F26 /* AVFoundation.framework in Frameworks */,
 				96949C1F1CC0D3D600336F26 /* AudioToolbox.framework in Frameworks */,
 				967F76391CC485B600E01FE4 /* libUMSocial_Sdk_Comment.a in Frameworks */,
+				961C45681CC68EC8006B9325 /* SMS_SDK.framework in Frameworks */,
 				967F76341CC485B600E01FE4 /* libHyphenateFullSDK.a in Frameworks */,
 				96949C1D1CC0D3CE00336F26 /* CoreMedia.framework in Frameworks */,
 			);
@@ -783,6 +831,27 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		961C45641CC68EC8006B9325 /* SMS_SDK */ = {
+			isa = PBXGroup;
+			children = (
+				961C45651CC68EC8006B9325 /* MOBFoundation.framework */,
+				961C45661CC68EC8006B9325 /* SMS_SDK.framework */,
+			);
+			path = SMS_SDK;
+			sourceTree = "<group>";
+		};
+		961C45741CC6A0C2006B9325 /* MBProgessHUD */ = {
+			isa = PBXGroup;
+			children = (
+				961C45751CC6A0C2006B9325 /* MBProgressHUD+KR.h */,
+				961C45761CC6A0C2006B9325 /* MBProgressHUD+KR.m */,
+				961C45771CC6A0C2006B9325 /* MBProgressHUD.bundle */,
+				961C45781CC6A0C2006B9325 /* MBProgressHUD.h */,
+				961C45791CC6A0C2006B9325 /* MBProgressHUD.m */,
+			);
+			path = MBProgessHUD;
+			sourceTree = "<group>";
+		};
 		967F74911CC485A200E01FE4 /* nearby */ = {
 			isa = PBXGroup;
 			children = (
@@ -796,6 +865,9 @@
 		967F74951CC485B600E01FE4 /* lib */ = {
 			isa = PBXGroup;
 			children = (
+				96C00F2E1CC761A700364158 /* FDFullscreenPopGesture */,
+				961C45741CC6A0C2006B9325 /* MBProgessHUD */,
+				961C45641CC68EC8006B9325 /* SMS_SDK */,
 				96B9650E1CC621E70001E401 /* MJExtension */,
 				96B965241CC621E70001E401 /* MJRefresh */,
 				96B964FA1CC621C40001E401 /* AFNetworking */,
@@ -1111,6 +1183,9 @@
 				967F75361CC485B600E01FE4 /* UMComLoginViewController.xib */,
 				967F75371CC485B600E01FE4 /* UMComUMengLoginHandler.h */,
 				967F75381CC485B600E01FE4 /* UMComUMengLoginHandler.m */,
+				961C456F1CC69CB3006B9325 /* HSRegisterViewController.h */,
+				961C45701CC69CB3006B9325 /* HSRegisterViewController.m */,
+				961C45711CC69CB3006B9325 /* HSRegisterViewController.xib */,
 			);
 			path = Login;
 			sourceTree = "<group>";
@@ -1623,20 +1698,6 @@
 			path = other;
 			sourceTree = "<group>";
 		};
-		967F76C61CC485C400E01FE4 /* tool */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = tool;
-			sourceTree = "<group>";
-		};
-		967F76C71CC485D700E01FE4 /* category */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = category;
-			sourceTree = "<group>";
-		};
 		9694998F1CC082E600336F26 = {
 			isa = PBXGroup;
 			children = (
@@ -1664,8 +1725,8 @@
 				969499BA1CC08EEC00336F26 /* me */,
 				967F74951CC485B600E01FE4 /* lib */,
 				967F76C31CC485BF00E01FE4 /* other */,
-				967F76C61CC485C400E01FE4 /* tool */,
-				967F76C71CC485D700E01FE4 /* category */,
+				96C00F241CC7341700364158 /* tool */,
+				96C00F201CC733F000364158 /* category */,
 				9694999E1CC082E600336F26 /* AppDelegate.h */,
 				9694999F1CC082E600336F26 /* AppDelegate.m */,
 				969499C61CC0900700336F26 /* HSTabBarController.h */,
@@ -1711,8 +1772,13 @@
 		969499B71CC08EEC00336F26 /* controllers */ = {
 			isa = PBXGroup;
 			children = (
+				96C00F2B1CC7614E00364158 /* HSHomeNavigationController.h */,
+				96C00F2C1CC7614E00364158 /* HSHomeNavigationController.m */,
 				96949C3E1CC0D61B00336F26 /* HSHomeTableViewController.h */,
 				96949C3F1CC0D61B00336F26 /* HSHomeTableViewController.m */,
+				96C00F321CC765AD00364158 /* HSCeshiViewController.h */,
+				96C00F331CC765AD00364158 /* HSCeshiViewController.m */,
+				96C00F341CC765AD00364158 /* HSCeshiViewController.xib */,
 			);
 			path = controllers;
 			sourceTree = "<group>";
@@ -1730,6 +1796,9 @@
 		96949C1B1CC0D3B800336F26 /* framework */ = {
 			isa = PBXGroup;
 			children = (
+				961C456D1CC69021006B9325 /* JavaScriptCore.framework */,
+				961C456B1CC69014006B9325 /* MessageUI.framework */,
+				961C45691CC6900C006B9325 /* libicucore.tbd */,
 				96949C3C1CC0D48400336F26 /* AssetsLibrary.framework */,
 				96949C3A1CC0D47B00336F26 /* CoreLocation.framework */,
 				96949C381CC0D47200336F26 /* CoreTelephony.framework */,
@@ -1796,6 +1865,8 @@
 		96B964A81CC610710001E401 /* controllers */ = {
 			isa = PBXGroup;
 			children = (
+				96C00F281CC75FC900364158 /* HSNearbyViewController.h */,
+				96C00F291CC75FC900364158 /* HSNearbyViewController.m */,
 			);
 			path = controllers;
 			sourceTree = "<group>";
@@ -2069,6 +2140,33 @@
 			path = Header;
 			sourceTree = "<group>";
 		};
+		96C00F201CC733F000364158 /* category */ = {
+			isa = PBXGroup;
+			children = (
+				96C00F211CC7340700364158 /* NSString+HSString.h */,
+				96C00F221CC7340700364158 /* NSString+HSString.m */,
+			);
+			path = category;
+			sourceTree = "<group>";
+		};
+		96C00F241CC7341700364158 /* tool */ = {
+			isa = PBXGroup;
+			children = (
+				96C00F251CC7343100364158 /* HSManager.h */,
+				96C00F261CC7343100364158 /* HSManager.m */,
+			);
+			path = tool;
+			sourceTree = "<group>";
+		};
+		96C00F2E1CC761A700364158 /* FDFullscreenPopGesture */ = {
+			isa = PBXGroup;
+			children = (
+				96C00F2F1CC761A700364158 /* UINavigationController+FDFullscreenPopGesture.h */,
+				96C00F301CC761A700364158 /* UINavigationController+FDFullscreenPopGesture.m */,
+			);
+			path = FDFullscreenPopGesture;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -2141,12 +2239,15 @@
 				967F763A1CC485B600E01FE4 /* UMSCommentDetailController.xib in Resources */,
 				967F76461CC485B600E01FE4 /* TencentOpenApi_IOS_Bundle.bundle in Resources */,
 				967F76971CC485B600E01FE4 /* UMComLocationTableViewCell.xib in Resources */,
+				961C45731CC69CB3006B9325 /* HSRegisterViewController.xib in Resources */,
 				967F763F1CC485B600E01FE4 /* UMSLoginViewController.xib in Resources */,
+				961C457B1CC6A0C2006B9325 /* MBProgressHUD.bundle in Resources */,
 				967F764E1CC485B600E01FE4 /* FZLanTingHei-L-GBK-M.TTF in Resources */,
 				967F763C1CC485B600E01FE4 /* UMSCommentInputControlleriPad.xib in Resources */,
 				967F76501CC485B600E01FE4 /* UMComSDKResources.bundle in Resources */,
 				967F76651CC485B600E01FE4 /* UMComCommentInput.xib in Resources */,
 				96B965691CC621E70001E401 /* MJRefresh.bundle in Resources */,
+				96C00F361CC765AD00364158 /* HSCeshiViewController.xib in Resources */,
 				967F76AA1CC485B600E01FE4 /* UMComPostReplyEditView.xib in Resources */,
 				967F763E1CC485B600E01FE4 /* UMShareEditViewControlleriPad.xib in Resources */,
 				969499A81CC082E600336F26 /* Assets.xcassets in Resources */,
@@ -2194,6 +2295,7 @@
 				967F767C1CC485B600E01FE4 /* UMComRefreshView.m in Sources */,
 				967F76A91CC485B600E01FE4 /* UMComPostReplyEditView.m in Sources */,
 				967F76A31CC485B600E01FE4 /* UMComTopFeedTableViewHelper.m in Sources */,
+				96C00F2A1CC75FC900364158 /* HSNearbyViewController.m in Sources */,
 				967F76641CC485B600E01FE4 /* UMComCommentEditView.m in Sources */,
 				967F76821CC485B600E01FE4 /* UMComiToast.m in Sources */,
 				96B964F01CC61FE20001E401 /* SDWebImageDownloaderOperation.m in Sources */,
@@ -2217,6 +2319,7 @@
 				96B9656B1CC621E70001E401 /* UIScrollView+MJExtension.m in Sources */,
 				967F769C1CC485B600E01FE4 /* UMComFeedStyle.m in Sources */,
 				967F76B41CC485B600E01FE4 /* UMComRemoteNoticeViewController.m in Sources */,
+				96C00F231CC7340700364158 /* NSString+HSString.m in Sources */,
 				96B965601CC621E70001E401 /* MJRefreshAutoGifFooter.m in Sources */,
 				967F764A1CC485B600E01FE4 /* UMComModel.xcdatamodeld in Sources */,
 				96B965511CC621E70001E401 /* MJExtensionConst.m in Sources */,
@@ -2235,9 +2338,11 @@
 				96B965631CC621E70001E401 /* MJRefreshBackGifFooter.m in Sources */,
 				967F76B71CC485B600E01FE4 /* UMComSysLikeTableViewCell.m in Sources */,
 				967F76841CC485B600E01FE4 /* UMComEmojiKeyBoardView.m in Sources */,
+				96C00F2D1CC7614E00364158 /* HSHomeNavigationController.m in Sources */,
 				967F765D1CC485B600E01FE4 /* UMComViewController.m in Sources */,
 				96B964F61CC61FE20001E401 /* UIImage+WebP.m in Sources */,
 				967F76711CC485B600E01FE4 /* UMComMutiStyleTextView.m in Sources */,
+				96C00F271CC7343100364158 /* HSManager.m in Sources */,
 				96B965581CC621E70001E401 /* NSObject+MJKeyValue.m in Sources */,
 				967F76551CC485B600E01FE4 /* UMComMessageManager.m in Sources */,
 				967F76B01CC485B600E01FE4 /* UMComLikeTableViewController.m in Sources */,
@@ -2291,6 +2396,7 @@
 				967F76BF1CC485B600E01FE4 /* UMComUserCenterViewController.m in Sources */,
 				96B9655E1CC621E70001E401 /* MJRefreshFooter.m in Sources */,
 				967F769E1CC485B600E01FE4 /* UMComFocusFeedTableViewController.m in Sources */,
+				961C457C1CC6A0C2006B9325 /* MBProgressHUD.m in Sources */,
 				96B964EF1CC61FE20001E401 /* SDWebImageDownloader.m in Sources */,
 				969499C81CC0900700336F26 /* HSTabBarController.m in Sources */,
 				96B964C51CC61C470001E401 /* SDCollectionViewCell.m in Sources */,
@@ -2307,9 +2413,11 @@
 				96B964F31CC61FE20001E401 /* UIButton+WebCache.m in Sources */,
 				967F76741CC485B600E01FE4 /* UMAssetsCollectionCell.m in Sources */,
 				967F76691CC485B600E01FE4 /* UMComGridView.m in Sources */,
+				961C45721CC69CB3006B9325 /* HSRegisterViewController.m in Sources */,
 				96B965661CC621E70001E401 /* MJRefreshGifHeader.m in Sources */,
 				96B965651CC621E70001E401 /* MJRefreshBackStateFooter.m in Sources */,
 				967F768A1CC485B600E01FE4 /* UMComFindViewController.m in Sources */,
+				96C00F311CC761A700364158 /* UINavigationController+FDFullscreenPopGesture.m in Sources */,
 				967F76A51CC485B600E01FE4 /* UMComCommentTableViewCell.m in Sources */,
 				96B965681CC621E70001E401 /* MJRefreshStateHeader.m in Sources */,
 				967F76811CC485B600E01FE4 /* UMComGridTableViewCellOne.m in Sources */,
@@ -2325,6 +2433,7 @@
 				967F765E1CC485B600E01FE4 /* UMComActionDeleteView.m in Sources */,
 				967F76B91CC485B600E01FE4 /* UMComProfileSettingController.m in Sources */,
 				967F76B11CC485B600E01FE4 /* UMComNoticeSystemViewController.m in Sources */,
+				961C457A1CC6A0C2006B9325 /* MBProgressHUD+KR.m in Sources */,
 				967F76C01CC485B600E01FE4 /* UMComUserProfileDetailView.m in Sources */,
 				967F76BC1CC485B600E01FE4 /* UMComMicroTopicSearchViewController.m in Sources */,
 				967F76951CC485B600E01FE4 /* UMComLocationListController.m in Sources */,
@@ -2336,6 +2445,7 @@
 				967F76911CC485B600E01FE4 /* UMComEditViewController.m in Sources */,
 				96B964EA1CC61FE20001E401 /* MKAnnotationView+WebCache.m in Sources */,
 				96B9650B1CC621C40001E401 /* AFURLRequestSerialization.m in Sources */,
+				96C00F351CC765AD00364158 /* HSCeshiViewController.m in Sources */,
 				967F76861CC485B600E01FE4 /* UMComImageView.m in Sources */,
 				967F766B1CC485B600E01FE4 /* UMComProgressView.m in Sources */,
 			);
@@ -2465,10 +2575,11 @@
 					"$(inherited)",
 					"$(PROJECT_DIR)/tngouHealth/nearby/lib/umeng_community_ios_micro_sdk_v2.4/Framework/UMSocial_Sdk/UMSocial_Sdk_Extra_Frameworks/TencentOpenAPI",
 					"$(PROJECT_DIR)/tngouHealth/lib/umeng_community_ios_micro_sdk_v2.4/Framework/UMSocial_Sdk/UMSocial_Sdk_Extra_Frameworks/TencentOpenAPI",
+					"$(PROJECT_DIR)/tngouHealth/lib/SMS_SDK",
 				);
 				GCC_PREFIX_HEADER = "$(PRODUCT_NAME)/PrefixHeader.pch";
 				INFOPLIST_FILE = tngouHealth/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				LIBRARY_SEARCH_PATHS = (
 					"$(inherited)",
@@ -2490,6 +2601,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.houshuai.tngouHealth;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -2504,10 +2616,11 @@
 					"$(inherited)",
 					"$(PROJECT_DIR)/tngouHealth/nearby/lib/umeng_community_ios_micro_sdk_v2.4/Framework/UMSocial_Sdk/UMSocial_Sdk_Extra_Frameworks/TencentOpenAPI",
 					"$(PROJECT_DIR)/tngouHealth/lib/umeng_community_ios_micro_sdk_v2.4/Framework/UMSocial_Sdk/UMSocial_Sdk_Extra_Frameworks/TencentOpenAPI",
+					"$(PROJECT_DIR)/tngouHealth/lib/SMS_SDK",
 				);
 				GCC_PREFIX_HEADER = "$(PRODUCT_NAME)/PrefixHeader.pch";
 				INFOPLIST_FILE = tngouHealth/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				LIBRARY_SEARCH_PATHS = (
 					"$(inherited)",
@@ -2529,6 +2642,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.houshuai.tngouHealth;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};

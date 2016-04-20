@@ -38,7 +38,7 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     
-    [self setForumUIBackButton];
+//    [self setForumUIBackButton];
     [self setForumUITitle:UMComLocalizedString(@"find", @"我的")];
     
     self.tableView = [[UITableView alloc]initWithFrame:self.view.bounds style:UITableViewStylePlain];

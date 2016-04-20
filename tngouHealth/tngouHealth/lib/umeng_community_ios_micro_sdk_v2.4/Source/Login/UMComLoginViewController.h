@@ -13,9 +13,6 @@
 @interface UMComLoginViewController : UIViewController
 
 @property (nonatomic, weak) IBOutlet UIButton *sinaLoginButton;
-@property (nonatomic, weak) IBOutlet UIButton *qqLoginButton;
-@property (nonatomic, weak) IBOutlet UIButton *wechatLoginButton;
 
-@property (nonatomic, weak) IBOutlet UIButton *closeButton;
 
 @end

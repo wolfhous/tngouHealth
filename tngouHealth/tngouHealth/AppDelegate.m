@@ -11,6 +11,8 @@
 #import "UMCommunity.h"
 //环信SDK
 #import "EMSDK.h"
+//MOB短信验证
+#import <SMS_SDK/SMSSDK.h>
 @interface AppDelegate ()
 
 @end
@@ -33,6 +35,12 @@
 //    options.apnsCertName = @"istore_dev";
     [[EMClient sharedClient] initializeSDKWithOptions:options];
     //===================环信end============//
+    
+    
+    
+    //===================Mob短信验证begin============//
+    [SMSSDK registerApp:@"11dba7ab65a8c" withSecret:@"ac4dc0516e4c18197bca2eb865795c01"];
+    //===================Mob短信验证end============//
     return YES;
 }
 

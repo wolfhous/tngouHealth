@@ -76,7 +76,8 @@
     if ((rootViewController == self.navigationController && rootViewController.childViewControllers.count == 1) || rootViewController == self) {
         self.navigationItem.leftBarButtonItem = nil;
     }else{
-        [self setForumUIBackButton];
+        self.navigationItem.leftBarButtonItem = nil;
+//        [self setForumUIBackButton];
     }
     //创建导航条视图
     [self creatNigationItemView];
@@ -304,14 +305,14 @@
     rightButton.imageEdgeInsets =  UIEdgeInsetsMake(delta, delta, delta, delta);
     [rightButton setImage:UMComImageWithImageName(@"find+") forState:UIControlStateNormal];
     [rightButton addTarget:self action:@selector(onClickFind:) forControlEvents:UIControlEventTouchUpInside];
-    [self.navigationController.navigationBar addSubview:rightButton];
+//    [self.navigationController.navigationBar addSubview:rightButton];
     self.findButton = rightButton;
     
     self.itemNoticeView = [self creatNoticeViewWithOriginX:rightButton.frame.size.width-10];
     [self.findButton addSubview:self.itemNoticeView];
 //    [self refreshMessageData:nil];
     //创建菜单栏
-    UMComHorizonCollectionView *collectionMenuView = [[UMComHorizonCollectionView alloc]initWithFrame:CGRectMake(40, 0, self.view.frame.size.width - 80, 44) itemCount:4];
+    UMComHorizonCollectionView *collectionMenuView = [[UMComHorizonCollectionView alloc]initWithFrame:CGRectMake(55, 0, self.view.frame.size.width - 80, 44) itemCount:4];
     collectionMenuView.cellDelegate = self;
     collectionMenuView.indicatorLineHeight = 2;
     collectionMenuView.indicatorLineWidth = UMComWidthScaleBetweenCurentScreenAndiPhone6Screen(35.f);

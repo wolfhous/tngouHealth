@@ -10,7 +10,7 @@
 #import "UMComRequestTableViewController.h"
 #import "UMComFeedStyle.h"
 
-#define DeltaBottom  45
+#define DeltaBottom  90
 #define DeltaRight 45
 
 @class UMComComment,UMComPullRequest;

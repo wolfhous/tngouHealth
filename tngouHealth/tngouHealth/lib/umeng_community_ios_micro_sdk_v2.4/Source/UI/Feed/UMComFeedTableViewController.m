@@ -105,14 +105,14 @@
     }
     [self setTitleViewWithTitle:self.title];
 }
-
+//hs创建编辑按钮
 - (void)createEditButton
 {
     self.editButton = [UIButton buttonWithType:UIButtonTypeCustom];
     self.editButton.frame = CGRectMake(0, 0, 50, 50);
     self.editButton.center = CGPointMake(self.view.frame.size.width-DeltaRight, [UIApplication sharedApplication].keyWindow.bounds.size.height-DeltaBottom);
-    [self.editButton setImage:UMComImageWithImageName(@"um_edit_nomal") forState:UIControlStateNormal];
-    [self.editButton setImage:UMComImageWithImageName(@"um_edit_highlight") forState:UIControlStateSelected];
+    [self.editButton setImage:[UIImage imageNamed:@"写"] forState:UIControlStateNormal];
+//    [self.editButton setImage:UMComImageWithImageName(@"um_edit_highlight") forState:UIControlStateSelected];
     [self.editButton addTarget:self action:@selector(onClickEdit:) forControlEvents:UIControlEventTouchUpInside];
     self.editButton.autoresizingMask = UIViewAutoresizingFlexibleLeftMargin | UIViewAutoresizingFlexibleTopMargin;
 }

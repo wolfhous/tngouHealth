@@ -1,13 +1,14 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10116" systemVersion="15E65" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="nGu-Aa-nwf">
     <dependencies>
+        <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
     </dependencies>
     <scenes>
-        <!--Root View Controller-->
+        <!--首页-->
         <scene sceneID="hCQ-Y6-ryx">
             <objects>
-                <tableViewController id="ZmN-xx-haq" customClass="HSHomeTableViewController" sceneMemberID="viewController">
+                <tableViewController id="ZmN-xx-haq" userLabel="首页" customClass="HSHomeTableViewController" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" id="a87-Ml-eKb">
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -22,14 +23,14 @@
                                 </tableViewCellContentView>
                                 <color key="backgroundColor" red="0.69417023550000001" green="0.64521454099999997" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                             </tableViewCell>
-                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" id="J88-Dl-fDK">
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" id="Tr5-yy-wwv">
                                 <rect key="frame" x="0.0" y="136" width="600" height="44"/>
                                 <autoresizingMask key="autoresizingMask"/>
-                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="J88-Dl-fDK" id="0iV-KM-1fE">
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="Tr5-yy-wwv" id="JEM-0f-Ae9">
                                     <rect key="frame" x="0.0" y="0.0" width="600" height="43"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                 </tableViewCellContentView>
-                                <color key="backgroundColor" red="1" green="0.88880684180000002" blue="0.084825281720000006" alpha="1" colorSpace="calibratedRGB"/>
+                                <color key="backgroundColor" red="0.69417023550000001" green="0.64521454099999997" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                             </tableViewCell>
                         </prototypes>
                         <connections>
@@ -37,7 +38,7 @@
                             <outlet property="delegate" destination="ZmN-xx-haq" id="im2-Wr-hnM"/>
                         </connections>
                     </tableView>
-                    <navigationItem key="navigationItem" title="Root View Controller" id="9z2-ei-H9h"/>
+                    <navigationItem key="navigationItem" title="首页" id="9z2-ei-H9h" userLabel="首页"/>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="fkw-bi-flg" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -46,7 +47,7 @@
         <!--首页-->
         <scene sceneID="TFJ-19-uj6">
             <objects>
-                <navigationController id="Vah-cK-F5K" sceneMemberID="viewController">
+                <navigationController id="Vah-cK-F5K" customClass="HSHomeNavigationController" sceneMemberID="viewController">
                     <tabBarItem key="tabBarItem" title="首页" image="shouye" id="NyP-6P-zdZ">
                         <userDefinedRuntimeAttributes>
                             <userDefinedRuntimeAttribute type="image" keyPath="selectedImage" value="shouye2"/>
@@ -105,7 +106,7 @@
             </objects>
             <point key="canvasLocation" x="-411" y="-140"/>
         </scene>
-        <!--附近药店-->
+        <!--View Controller-->
         <scene sceneID="Gm4-Sg-Lta">
             <objects>
                 <viewController id="zZb-kb-xgz" sceneMemberID="viewController">
@@ -118,7 +119,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
-                    <navigationItem key="navigationItem" title="附近药店" id="iUW-1h-Gsn"/>
+                    <navigationItem key="navigationItem" id="iUW-1h-Gsn"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="MJA-yz-e7d" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -167,7 +168,7 @@
         <!--我-->
         <scene sceneID="jWM-9L-efA">
             <objects>
-                <navigationController id="7lG-tg-BQ8" sceneMemberID="viewController">
+                <navigationController id="7lG-tg-BQ8" customClass="HSHomeNavigationController" sceneMemberID="viewController">
                     <tabBarItem key="tabBarItem" title="我" image="me" id="P5B-iT-PH9">
                         <userDefinedRuntimeAttributes>
                             <userDefinedRuntimeAttribute type="image" keyPath="selectedImage" value="me2"/>
@@ -185,7 +186,7 @@
             </objects>
             <point key="canvasLocation" x="871" y="-146"/>
         </scene>
-        <!--我-->
+        <!--Com Find View Controller-->
         <scene sceneID="RV3-Ih-xMv">
             <objects>
                 <viewController id="1g3-cc-5Qs" customClass="UMComFindViewController" sceneMemberID="viewController">
@@ -198,7 +199,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
-                    <navigationItem key="navigationItem" title="我" id="xgX-vo-nAm"/>
+                    <navigationItem key="navigationItem" id="xgX-vo-nAm"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="O7t-OV-Yuq" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
