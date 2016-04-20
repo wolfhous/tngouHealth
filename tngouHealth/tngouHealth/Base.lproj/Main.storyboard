@@ -106,10 +106,10 @@
             </objects>
             <point key="canvasLocation" x="-411" y="-140"/>
         </scene>
-        <!--View Controller-->
+        <!--Nearby View Controller-->
         <scene sceneID="Gm4-Sg-Lta">
             <objects>
-                <viewController id="zZb-kb-xgz" sceneMemberID="viewController">
+                <viewController id="zZb-kb-xgz" customClass="HSNearbyViewController" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="Qdk-GM-eGq"/>
                         <viewControllerLayoutGuide type="bottom" id="2JS-zH-7bz"/>
@@ -117,9 +117,23 @@
                     <view key="view" contentMode="scaleToFill" id="orX-2Q-jWM">
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" mapType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="egz-bw-QvC">
+                                <rect key="frame" x="0.0" y="64" width="600" height="487"/>
+                            </mapView>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="egz-bw-QvC" secondAttribute="trailing" id="5ks-0V-7Z0"/>
+                            <constraint firstItem="2JS-zH-7bz" firstAttribute="top" secondItem="egz-bw-QvC" secondAttribute="bottom" id="Aac-Rq-kii"/>
+                            <constraint firstItem="egz-bw-QvC" firstAttribute="leading" secondItem="orX-2Q-jWM" secondAttribute="leading" id="EdO-Be-Gna"/>
+                            <constraint firstItem="egz-bw-QvC" firstAttribute="top" secondItem="Qdk-GM-eGq" secondAttribute="bottom" id="aTP-rx-yGx"/>
+                        </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="iUW-1h-Gsn"/>
+                    <connections>
+                        <outlet property="mapView" destination="egz-bw-QvC" id="I1U-08-c8Z"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="MJA-yz-e7d" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>

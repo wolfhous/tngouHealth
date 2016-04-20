@@ -251,6 +251,7 @@
 		96C00F311CC761A700364158 /* UINavigationController+FDFullscreenPopGesture.m in Sources */ = {isa = PBXBuildFile; fileRef = 96C00F301CC761A700364158 /* UINavigationController+FDFullscreenPopGesture.m */; };
 		96C00F351CC765AD00364158 /* HSCeshiViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 96C00F331CC765AD00364158 /* HSCeshiViewController.m */; };
 		96C00F361CC765AD00364158 /* HSCeshiViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 96C00F341CC765AD00364158 /* HSCeshiViewController.xib */; };
+		96C00F381CC777F900364158 /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 96C00F371CC777F900364158 /* MapKit.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -785,6 +786,7 @@
 		96C00F321CC765AD00364158 /* HSCeshiViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HSCeshiViewController.h; sourceTree = "<group>"; };
 		96C00F331CC765AD00364158 /* HSCeshiViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HSCeshiViewController.m; sourceTree = "<group>"; };
 		96C00F341CC765AD00364158 /* HSCeshiViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = HSCeshiViewController.xib; sourceTree = "<group>"; };
+		96C00F371CC777F900364158 /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -792,6 +794,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				96C00F381CC777F900364158 /* MapKit.framework in Frameworks */,
 				961C456E1CC69021006B9325 /* JavaScriptCore.framework in Frameworks */,
 				961C456C1CC69014006B9325 /* MessageUI.framework in Frameworks */,
 				961C456A1CC6900C006B9325 /* libicucore.tbd in Frameworks */,
@@ -1796,6 +1799,7 @@
 		96949C1B1CC0D3B800336F26 /* framework */ = {
 			isa = PBXGroup;
 			children = (
+				96C00F371CC777F900364158 /* MapKit.framework */,
 				961C456D1CC69021006B9325 /* JavaScriptCore.framework */,
 				961C456B1CC69014006B9325 /* MessageUI.framework */,
 				961C45691CC6900C006B9325 /* libicucore.tbd */,

@@ -29,10 +29,10 @@
 #define SCREEN_HEIGHT ([UIScreen mainScreen].bounds.size.height)
 
 //请求AFNetworkingManager
-#define DZ_AF_MANAGER [AFHTTPRequestOperationManager manager]
+#define HS_AF_MANAGER [AFHTTPRequestOperationManager manager]
 //防止block块循环引用用weakSelf
 #define  WKSELF __unsafe_unretained typeof(self) weakSelf = self
 //image头路径
-#define IMGPATH @"http://www.zkbedu.com/"
+#define IMGPATH @"http://tnfs.tngou.net/image"
 
 #endif /* PrefixHeader_pch */
