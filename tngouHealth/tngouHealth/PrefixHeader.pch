@@ -11,6 +11,7 @@
 #import "MBProgressHUD+KR.h"
 #import "AFNetworking.h"
 #import "MJExtension.h"
+#import "UIButton+HSButton.h"
 // Include any system framework and library headers here that should be included in all compilation units.
 // You will also need to set the Prefix Header build setting of one or more of your targets to reference this file.
 
@@ -30,6 +31,7 @@
 
 //请求AFNetworkingManager
 #define HS_AF_MANAGER [AFHTTPRequestOperationManager manager]
+#define HS_PARAMETERS NSMutableDictionary *parameters = [NSMutableDictionary dictionary]
 //防止block块循环引用用weakSelf
 #define  WKSELF __unsafe_unretained typeof(self) weakSelf = self
 //image头路径
