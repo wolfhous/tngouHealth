@@ -87,11 +87,13 @@
         [MBProgressHUD showError:@"请输入密码"];
         return;
     }
+    [MBProgressHUD showMessage:@"登录中..."];
     EMError *error = [[EMClient sharedClient] loginWithUsername:self.userNameTextField.text password:self.userPasswordTextField.text];
     if (error == nil) {
         DLog(@"环信登录成功");
         [self UMLogin];
     }else{
+        [MBProgressHUD hideHUD];
         DLog(@"%@",error);
         [MBProgressHUD showError:@"用户名或密码错误"];
     }
@@ -110,12 +112,15 @@
         if(!error){
             //登录成功
             DLog(@"UM社区自动登录成功");
+            [MBProgressHUD hideHUD];
             [self dismissViewControllerAnimated:YES completion:^{
-                
+                //可以在这里存储一些登录成功后必须的的东西
             }];
             
         }else{
             DLog(@"UM社区自动登录失败,%@",error);
+            [MBProgressHUD hideHUD];
+            [MBProgressHUD showError:@"网络连接错误"];
         }
     }];
     

@@ -27,8 +27,6 @@
  *  @param appSecret 在Mob官网(http://mob.com/ )中注册的应用秘钥。(The appSecret of mob Application. Log in to http://mob.com/ to register to be a Mob developer and create a application if you don't have one)
  */
 +(void)registerApp:(NSString*)appKey withSecret:(NSString*)appSecret;
-
-
 #pragma mark - 支持获取验证码和提交验证码 (get the verification code and commit verifacation code)
 /**
  *  @from                    v1.1.1

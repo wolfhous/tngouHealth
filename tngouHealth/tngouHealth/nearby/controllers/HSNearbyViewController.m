@@ -190,23 +190,30 @@
     [self.cancelBtn setRoundLayerWithCornerRadius:5];
     [self.callNumBtn setRoundLayerWithCornerRadius:5];
     /**显示选择的view*/
-    if (self.detailView.hidden == YES) {
-        self.detailView.hidden = NO;
-    }
     
+    if (self.selectAnnotation.subtitle.length < 2) {
+        self.callNumBtn.hidden = YES;
+    }else{
+        self.callNumBtn.hidden = NO;
+    }
+    self.detailView.hidden = NO;
 }
 
 #pragma mark - detailView点击事件
 
 /** 打电话*/
 - (IBAction)callNumBtn:(id)sender {
+    DLog(@"%@",self.selectAnnotation.subtitle);
     //获取能拨打的电话号码
-    NSRange range = NSMakeRange(0, 11);
-    NSString *telNumber = [self.selectAnnotation.subtitle  substringWithRange:range];
-    telNumber = [telNumber  stringByReplacingOccurrencesOfString:@"-" withString:@""];
-    //把能拨打的号码 给url
+    NSRange range;
+    NSString *telNumber;
+    if ([self.selectAnnotation.subtitle hasPrefix:@"1"]) {//手机号码
+        range = NSMakeRange(0, 11);
+        telNumber = [self.selectAnnotation.subtitle  substringWithRange:range];
+    }else{
+        telNumber = self.selectAnnotation.subtitle;
+    }
     NSURL *url = [NSURL URLWithString:[NSString stringWithFormat:@"tel://%@",telNumber]];
-    
     [[UIApplication sharedApplication]openURL:url];
 }
 /** 去这里*/

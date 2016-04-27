@@ -15,9 +15,13 @@
 #import "NSString+HSString.h"
 
 @interface HSRegisterViewController ()
+/** 用户名*/
 @property (weak, nonatomic) IBOutlet UITextField *userNameField;
+/** 用户密码*/
 @property (weak, nonatomic) IBOutlet UITextField *uesrPasswordField;
+/** 用户输入的验证码*/
 @property (weak, nonatomic) IBOutlet UITextField *codeField;
+/** 获取验证码按钮*/
 @property (weak, nonatomic) IBOutlet UIButton *codeBtn;
 
 
@@ -82,11 +86,10 @@
     }
     
     
-    
+    //先进行验证码验证
     [SMSSDK commitVerificationCode:self.codeField.text phoneNumber:self.userNameField.text zone:@"86" result:^(NSError *error) {
         if (!error) {
-            DLog(@"验证成功");
-            [MBProgressHUD showSuccess:@"验证成功"];
+            DLog(@"验证码验证成功");
         }
         else
         {
@@ -96,14 +99,16 @@
         }
     }];
 
-    
+    //再进行环信注册
     EMError *error = [[EMClient sharedClient] registerWithUsername:self.userNameField.text password:self.uesrPasswordField.text];
     if (error == nil) {
         DLog(@"环信注册成功");
+        [MBProgressHUD showSuccess:@"注册成功"];
         [self.navigationController popViewControllerAnimated:YES];
         
     }else{
         DLog(@"%@",error);
+        [MBProgressHUD showSuccess:@"网络错误"];
     }
     
     
